@@ -45,8 +45,8 @@
                         <div class="col-12 col-sm-6">
                              <img src="img/logo.png" alt="Logo" class="img-fluid">
                         </div>
-                        <div class="col-12 col-sm-6 align-self-center btn-block">
-                            <a href="#reserve" role="button" class="btn btn-warning btn-lg">Reserve Table</a>
+                        <div class="col-12 col-sm-6 align-self-center">
+                            <a href="#reserve" role="button" class="btn btn-warning btn-block">Reserve Table</a>
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
             <div class="col col-sm col-md">
                 <div class="media">
                     <div class="media-body">
-                        <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
                         <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
                     </div>
                     <img src="img/buffet.png" alt="" class="d-flex img-thumbnail ml-3 align-self-center">
@@ -103,65 +103,72 @@
             </div>
         </div>
 
-        <div class="row mb-5 mt-5" id="reserve">
+
+
+        <div class="row row-content">
             <div class="col-12 col-sm-8 offset-sm-2">
-                <div class="card">
-                    <div class="card-header bg- bg- bg-warning">
-                    <h2>Reserve a Table</h2>
-                    </div>
+                <div class="card" id="reserve">
+                    <h3 class="card-header bg-warning">Reserve a table</h3>
                     <div class="card-body">
-                        <form>
-                            <dl class="row">
-                                <dt class="col-12 col-sm-2">Number of Guests</dt>
-                                <dd class="col-12 col-sm-10">
-                                    <div  class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" name="1" id="1" class="custom-control-input" >
-                                        <label class="custom-control-label" for="1"><strong>1</strong></label>
+                        <form action="">
+                            <fieldset class="form-group">
+                                <div class="row">
+                                    <legend class="col-md-3 col-form-label pt-0">
+                                        Number of Guests
+                                    </legend>
+                                    <div class="col-md-9">
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" name="1" id="1" class="form-check-input" value="1">
+                                        <label class="form-check-label" for="1"><strong>1</strong></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" name="2" id="2" class="form-check-input"  value="2">
+                                        <label class="form-check-label" for="2"><strong>2</strong></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" name="3" id="3" class="form-check-input" value="3" >
+                                        <label class="form-check-label" for="3"><strong>3</strong></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" name="4" id="4" class="form-check-input" value="4">
+                                        <label class="form-check-label" for="4"><strong>4</strong></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" name="5" id="5" class="form-check-input" value="5">
+                                        <label class="form-check-label" for="5"><strong>5</strong></label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" name="6" id="6" class="form-check-input" value="6">
+                                        <label class="form-check-label" for="6"><strong>6</strong></label>
+                                        </div>
+
                                     </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" name="2" id="2" class="custom-control-input" >
-                                        <label class="custom-control-label" for="2"><strong>2</strong></label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" name="3" id="3" class="custom-control-input" >
-                                        <label class="custom-control-label" for="3"><strong>3</strong></label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" name="4" id="4" class="custom-control-input" >
-                                        <label class="custom-control-label" for="4"><strong>4</strong></label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" name="5" id="5" class="custom-control-input" >
-                                        <label class="custom-control-label" for="5"><strong>5</strong></label>
-                                    </div>
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" name="6" id="6" class="custom-control-input" >
-                                        <label class="custom-control-label" for="6"><strong>6</strong></label>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl class="row">
-                                <dt class="col-12 col-sm-2">
-                                    Date and Time
-                                </dt>
-                                <dd class="col-12 col-sm-4">
-                                    <input type="text" class="form-control" name="date" id="date" placeholder="Date">
-                                </dd>
-                                <dd class="col-12 col-sm-4">
-                                    <input type="text" class="form-control" name="time" id="time" placeholder="Time">
-                                </dd>
-                            </dl>
-                            <dl class="row">
-                                <dd class="col-11 offset-sm-2">
-                                    <button class="btn btn-primary" type="submit">
-                                        Reserve
+                                </div>
+                            </fieldset>
+
+                            <div class="form-group row">
+                                <label for="datee" class="col-12 col-md-3">Date and Time</label>
+                                <div class="col-6 col-md-4">
+                                    <input type="text" class="form-control" id="datee" placeholder="Date">
+                                </div>
+                                <div class="col-6 col-md-4">
+                                    <input type="text" class="form-control" id="timee" placeholder="time">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="offset-md-3 col-11">
+                                    <button type="submit" class="btn btn-primary">
+                                    Reserve
                                     </button>
-                                </dd>
-                            </dl>
+                                </div>
+
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
